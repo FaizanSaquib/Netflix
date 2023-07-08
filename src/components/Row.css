@@ -1,0 +1,36 @@
+.row{
+    color: #ffffff;
+    margin-left: 20px;
+}
+.posters img{
+    object-fit:contain;
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.posters> img:hover {
+    transform: scale(1.08);
+}
+.banner> img{
+    height: 250px;
+}
+.banner>img:hover{
+    transform: scale(1.1);
+}
+.posters{
+    display: flex;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.posters::-webkit-scrollbar{
+    visibility: hidden;
+    width: max-content;
+}
+.upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
